@@ -1,4 +1,4 @@
-def dsiplay(board)
+def display(board)
   i = 0
   9.times do
     if i.modulo(3) == 0
