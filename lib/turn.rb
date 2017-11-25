@@ -1,7 +1,7 @@
 def display_board(board)
-  i = 0
+  i = 1
   9.times do
-    print " #{board[i]} "
+    print " #{board[i-1]} "
     if i.modulo(3) == 0
       puts ""
       puts "-----------"
