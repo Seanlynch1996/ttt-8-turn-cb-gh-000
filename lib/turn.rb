@@ -7,5 +7,6 @@ def display_board(board)
       puts "-----------"
     else
       puts "|"
+    end
   end
 end
