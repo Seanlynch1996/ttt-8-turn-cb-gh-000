@@ -8,5 +8,6 @@ def display_board(board)
     else
       puts "|"
     end
+    i += 1
   end
 end
