@@ -1,7 +1,2 @@
 #!/usr/bin/env ruby
-require_relative "../lib/turn.rb"
 
-puts "Hi"
-board = [" "," "," "," "," "," "," "," "," "]
-display_board(board)
-end
