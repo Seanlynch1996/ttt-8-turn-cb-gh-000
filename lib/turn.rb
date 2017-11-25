@@ -14,3 +14,32 @@ def display_board(board)
   end
   puts ""
 end
+
+def valid_move?(board, index)
+  if (index < 9 && index >= 0)
+    if !position_taken(board, index)
+      return true
+    else
+      return false
+    end
+  else
+    return false
+  end
+end
+
+def position_taken?(board, index)
+  if (board[index] == "X"|| board[index] == "O")
+    return true
+  else
+    return false
+  end
+end
+
+def move(board, index, x_or_o)
+  board[index] = x_or_o
+end
+
+def input_to_index(input)
+  num = input.to_i
+  return num - 1
+end
