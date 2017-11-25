@@ -1,5 +1,6 @@
 
 def turn(board)
+  puts "fuck"
   valid = false
   while !valid
     puts "Please enter 1-9:"
