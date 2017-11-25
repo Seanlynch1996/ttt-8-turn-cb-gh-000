@@ -1,3 +1,20 @@
+
+def turn(board)
+  valid = false
+  while !valid
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    valid = valid_move(board, index)
+    if !valid
+      puts "Please enter a valid input"
+    end
+  end
+  move(board, index)
+end
+
+
+
 def display_board(board)
   i = 1
   9.times do
@@ -35,7 +52,7 @@ def position_taken?(board, index)
   end
 end
 
-def move(board, index, x_or_o)
+def move(board, index, x_or_o = "X")
   board[index] = x_or_o
 end
 
