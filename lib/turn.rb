@@ -11,7 +11,6 @@ def display_board(board)
       end
       i += 1
     end
-  else
-    puts ""
   end
+  puts ""
 end
